@@ -5,13 +5,14 @@ import { toast } from 'react-toastify'
 import ApperIcon from '../components/ApperIcon'
 import JobCard from '../components/JobCard'
 import JobDetails from '../components/JobDetails'
-import { jobService, savedJobService } from '../services'
+import { jobService, savedJobService, companyService } from '../services'
 
 const Jobs = () => {
   const [searchParams, setSearchParams] = useSearchParams()
   const [jobs, setJobs] = useState([])
-  const [filteredJobs, setFilteredJobs] = useState([])
+const [filteredJobs, setFilteredJobs] = useState([])
   const [savedJobs, setSavedJobs] = useState([])
+  const [companies, setCompanies] = useState([])
   const [selectedJob, setSelectedJob] = useState(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -24,18 +25,20 @@ const Jobs = () => {
   })
   const [showFilters, setShowFilters] = useState(false)
 
-  useEffect(() => {
+useEffect(() => {
     const loadJobs = async () => {
       setLoading(true)
       setError(null)
       try {
-        const [jobsData, savedData] = await Promise.all([
+        const [jobsData, savedData, companiesData] = await Promise.all([
           jobService.getAll(),
-          savedJobService.getAll()
+          savedJobService.getAll(),
+          companyService.getAll()
         ])
         setJobs(jobsData)
         setFilteredJobs(jobsData)
         setSavedJobs(savedData)
+        setCompanies(companiesData)
 
         // Check if there's a job ID in the URL
         const jobId = searchParams.get('id')
@@ -352,25 +355,29 @@ const Jobs = () => {
               </motion.button>
             </motion.div>
           ) : (
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-full">
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-full">
               {/* Job List */}
               <div className="space-y-4 overflow-y-auto max-h-full">
-                {filteredJobs.map((job, index) => (
-                  <motion.div
-                    key={job.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.05 }}
-                  >
-                    <JobCard
-                      job={job}
-                      isSelected={selectedJob?.id === job.id}
-                      isSaved={savedJobs.some(saved => saved.jobId === job.id)}
-                      onClick={() => handleJobClick(job)}
-                      onSave={() => handleSaveJob(job.id)}
-                    />
-                  </motion.div>
-                ))}
+                {filteredJobs.map((job, index) => {
+                  const jobCompany = companies.find(c => c.name === job.company)
+                  return (
+                    <motion.div
+                      key={job.id}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.05 }}
+                    >
+                      <JobCard
+                        job={job}
+                        company={jobCompany}
+                        isSelected={selectedJob?.id === job.id}
+                        isSaved={savedJobs.some(saved => saved.jobId === job.id)}
+                        onClick={() => handleJobClick(job)}
+                        onSave={() => handleSaveJob(job.id)}
+                      />
+                    </motion.div>
+                  )
+                })}
               </div>
 
               {/* Job Details */}

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "1",
+    "name": "TechCorp Solutions",
+    "industry": "Technology",
+    "location": "San Francisco, CA",
+    "size": "1000-5000",
+    "founded": 2010,
+    "website": "https://techcorp.com",
+    "logo": "https://via.placeholder.com/80x80/3B82F6/ffffff?text=TC",
+    "rating": 4.5,
+    "reviewCount": 324,
+    "mission": "Empowering businesses through innovative technology solutions that drive digital transformation and sustainable growth.",
+    "history": "Founded in 2010 by former Google engineers, TechCorp has grown from a small startup to a leading provider of enterprise software solutions, serving Fortune 500 companies worldwide.",
+    "quickFacts": [
+      "Industry leader in cloud computing",
+      "98% customer satisfaction rate",
+      "Present in 25+ countries",
+      "Carbon neutral since 2020"
+    ],
+    "benefits": [
+      "Competitive salary",
+      "Health & dental insurance",
+      "Remote work options",
+      "Professional development",
+      "Stock options"
+    ],
+    "culture": "Innovation-driven culture with focus on work-life balance and continuous learning",
+    "reviews": [
+      {
+        "id": "1",
+        "rating": 5,
+        "title": "Great place to grow",
+        "content": "Excellent opportunities for career advancement and learning new technologies.",
+        "author": "Software Engineer",
+        "date": "2024-01-15"
+      },
+      {
+        "id": "2", 
+        "rating": 4,
+        "title": "Good work-life balance",
+        "content": "Management really cares about employee wellbeing and flexible working arrangements.",
+        "author": "Product Manager",
+        "date": "2024-01-10"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Global Finance Corp",
+    "industry": "Finance",
+    "location": "New York, NY",
+    "size": "5000+",
+    "founded": 1995,
+    "website": "https://globalfinance.com",
+    "logo": "https://via.placeholder.com/80x80/10B981/ffffff?text=GF",
+    "rating": 4.2,
+    "reviewCount": 567,
+    "mission": "Providing comprehensive financial services that help individuals and businesses achieve their financial goals with integrity and innovation.",
+    "history": "Established in 1995, Global Finance Corp has become one of the most trusted names in financial services, managing over $2 trillion in assets.",
+    "quickFacts": [
+      "Top 10 investment bank globally",
+      "AAA credit rating",
+      "Serves 50M+ customers",
+      "Award-winning mobile app"
+    ],
+    "benefits": [
+      "Performance bonuses",
+      "Comprehensive health coverage",
+      "Retirement planning",
+      "Tuition reimbursement",
+      "Wellness programs"
+    ],
+    "culture": "Fast-paced environment focused on excellence, teamwork, and client success",
+    "reviews": [
+      {
+        "id": "3",
+        "rating": 4,
+        "title": "Excellent compensation",
+        "content": "Very competitive salary and bonus structure. Great for ambitious professionals.",
+        "author": "Financial Analyst",
+        "date": "2024-01-12"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "HealthTech Innovations",
+    "industry": "Healthcare",
+    "location": "Boston, MA",
+    "size": "500-1000",
+    "founded": 2015,
+    "website": "https://healthtech.com",
+    "logo": "https://via.placeholder.com/80x80/EF4444/ffffff?text=HT",
+    "rating": 4.7,
+    "reviewCount": 189,
+    "mission": "Revolutionizing healthcare through cutting-edge technology that improves patient outcomes and makes healthcare more accessible.",
+    "history": "Founded by medical professionals and tech experts in 2015, HealthTech has developed groundbreaking medical devices and software used in hospitals worldwide.",
+    "quickFacts": [
+      "FDA-approved medical devices",
+      "Partners with 200+ hospitals",
+      "R&D investment: 25% of revenue",
+      "Patent portfolio: 150+ patents"
+    ],
+    "benefits": [
+      "Equity participation",
+      "Flexible PTO",
+      "Health & wellness stipend",
+      "Learning budget",
+      "Innovation time"
+    ],
+    "culture": "Mission-driven culture with emphasis on innovation, collaboration, and making a positive impact on healthcare",
+    "reviews": [
+      {
+        "id": "4",
+        "rating": 5,
+        "title": "Meaningful work",
+        "content": "Incredible feeling knowing your work directly helps save lives. Amazing team and culture.",
+        "author": "Biomedical Engineer",
+        "date": "2024-01-08"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "EcoGreen Energy",
+    "industry": "Renewable Energy",
+    "location": "Austin, TX",
+    "size": "1000-5000",
+    "founded": 2012,
+    "website": "https://ecogreen.com",
+    "logo": "https://via.placeholder.com/80x80/22C55E/ffffff?text=EG",
+    "rating": 4.3,
+    "reviewCount": 278,
+    "mission": "Leading the transition to sustainable energy through innovative solar and wind solutions that power a cleaner future.",
+    "history": "Since 2012, EcoGreen has installed over 10GW of renewable energy capacity across North America, becoming a key player in the clean energy revolution.",
+    "quickFacts": [
+      "10GW+ renewable capacity installed",
+      "Carbon footprint: Net negative",
+      "B-Corp certified",
+      "Growth rate: 40% annually"
+    ],
+    "benefits": [
+      "Green commute allowance",
+      "Solar panel discounts",
+      "Sabbatical program",
+      "Mental health support",
+      "Volunteer time off"
+    ],
+    "culture": "Purpose-driven environment focused on sustainability, innovation, and environmental stewardship",
+    "reviews": [
+      {
+        "id": "5",
+        "rating": 4,
+        "title": "Great mission alignment",
+        "content": "Love working for a company that's actually making a difference for the planet.",
+        "author": "Project Manager",
+        "date": "2024-01-05"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "DataDriven Analytics",
+    "industry": "Data & Analytics",
+    "location": "Seattle, WA", 
+    "size": "100-500",
+    "founded": 2018,
+    "website": "https://datadriven.com",
+    "logo": "https://via.placeholder.com/80x80/8B5CF6/ffffff?text=DD",
+    "rating": 4.6,
+    "reviewCount": 142,
+    "mission": "Transforming raw data into actionable insights that drive business success through advanced analytics and machine learning.",
+    "history": "Founded by former Amazon data scientists in 2018, DataDriven has quickly become a trusted partner for companies looking to leverage their data for competitive advantage.",
+    "quickFacts": [
+      "AI/ML expertise since day one",
+      "500+ successful projects",
+      "99.9% uptime SLA",
+      "50+ data science certifications"
+    ],
+    "benefits": [
+      "Learning & development budget",
+      "Conference attendance",
+      "Flexible work arrangements",
+      "Top-tier equipment",
+      "Team building events"
+    ],
+    "culture": "Data-driven culture that values curiosity, experimentation, and continuous learning",
+    "reviews": [
+      {
+        "id": "6",
+        "rating": 5,
+        "title": "Cutting-edge technology",
+        "content": "Always working with the latest tools and technologies. Great learning environment.",
+        "author": "Data Scientist",
+        "date": "2024-01-03"
+      }
+    ]
+  }
+]
