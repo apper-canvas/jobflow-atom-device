@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "title": "Senior Frontend Developer",
+    "company": "TechCorp Solutions",
+    "location": "San Francisco, CA",
+    "type": "full-time",
+    "salary": {
+      "min": 120000,
+      "max": 160000
+    },
+    "description": "We're looking for a Senior Frontend Developer to join our dynamic team. You'll be responsible for building and maintaining our web applications using React, TypeScript, and modern frontend technologies.\n\nYou'll work closely with our design and backend teams to create exceptional user experiences. This role offers the opportunity to work on cutting-edge projects and mentor junior developers.\n\nWe offer competitive compensation, comprehensive benefits, and a collaborative work environment that values innovation and professional growth.",
+    "requirements": [
+      "5+ years of experience with React and JavaScript",
+      "Strong knowledge of TypeScript and modern ES6+ features",
+      "Experience with state management libraries (Redux, Zustand)",
+      "Proficiency in CSS, SASS, and responsive design",
+      "Experience with testing frameworks (Jest, React Testing Library)",
+      "Familiarity with build tools (Webpack, Vite) and CI/CD pipelines",
+      "Strong problem-solving skills and attention to detail",
+      "Excellent communication and teamwork abilities"
+    ],
+    "postedDate": "2024-01-15T08:00:00Z",
+    "applicationDeadline": "2024-02-15T23:59:59Z"
+  },
+  {
+    "id": "2",
+    "title": "Product Manager",
+    "company": "InnovateLabs",
+    "location": "New York, NY",
+    "type": "full-time",
+    "salary": {
+      "min": 110000,
+      "max": 140000
+    },
+    "description": "Join our product team as a Product Manager and help shape the future of our innovative SaaS platform. You'll be responsible for defining product strategy, working with cross-functional teams, and ensuring we deliver value to our customers.\n\nThis role requires strong analytical skills, customer empathy, and the ability to translate business requirements into technical specifications. You'll work closely with engineering, design, and sales teams to bring products to market.\n\nWe're looking for someone who thrives in a fast-paced startup environment and has a passion for building products that solve real customer problems.",
+    "requirements": [
+      "3-5 years of product management experience",
+      "Strong analytical and problem-solving skills",
+      "Experience with product management tools (Jira, Asana, Figma)",
+      "Understanding of software development lifecycle",
+      "Excellent written and verbal communication skills",
+      "Data-driven approach to decision making",
+      "Experience with user research and customer interviews",
+      "Bachelor's degree in Business, Engineering, or related field"
+    ],
+    "postedDate": "2024-01-14T10:30:00Z",
+    "applicationDeadline": "2024-02-14T23:59:59Z"
+  },
+  {
+    "id": "3",
+    "title": "UX/UI Designer",
+    "company": "Design Studio Pro",
+    "location": "Remote",
+    "type": "contract",
+    "salary": {
+      "min": 80000,
+      "max": 100000
+    },
+    "description": "We're seeking a talented UX/UI Designer to join our creative team. You'll be responsible for designing user interfaces and experiences for web and mobile applications across various industries.\n\nThe ideal candidate has a strong portfolio showcasing their design process, from user research to final implementation. You'll collaborate with product managers, developers, and other stakeholders to create intuitive and visually appealing designs.\n\nThis is a remote position offering flexibility and the opportunity to work with a diverse range of clients and projects. We value creativity, attention to detail, and user-centered design principles.",
+    "requirements": [
+      "3+ years of UX/UI design experience",
+      "Proficiency in design tools (Figma, Sketch, Adobe Creative Suite)",
+      "Strong portfolio demonstrating design process and outcomes",
+      "Understanding of user research methodologies",
+      "Knowledge of responsive design and mobile-first approach",
+      "Experience with design systems and component libraries",
+      "Basic understanding of HTML/CSS and design implementation",
+      "Excellent presentation and communication skills"
+    ],
+    "postedDate": "2024-01-13T14:15:00Z",
+    "applicationDeadline": "2024-02-13T23:59:59Z"
+  },
+  {
+    "id": "4",
+    "title": "Data Scientist",
+    "company": "Analytics Plus",
+    "location": "Boston, MA",
+    "type": "full-time",
+    "salary": {
+      "min": 95000,
+      "max": 125000
+    },
+    "description": "Join our data science team to help derive insights from complex datasets and build predictive models that drive business decisions. You'll work with large-scale data processing, machine learning algorithms, and statistical analysis.\n\nThis role involves collaborating with business stakeholders to understand requirements, cleaning and preparing data, building and validating models, and communicating findings through visualizations and reports.\n\nWe're looking for someone with strong technical skills in Python/R, experience with machine learning frameworks, and the ability to translate complex data into actionable business insights.",
+    "requirements": [
+      "Master's degree in Data Science, Statistics, or related field",
+      "3+ years of experience in data science or analytics",
+      "Proficiency in Python or R for data analysis",
+      "Experience with machine learning libraries (scikit-learn, TensorFlow, PyTorch)",
+      "Strong SQL skills and database experience",
+      "Knowledge of statistical analysis and hypothesis testing",
+      "Experience with data visualization tools (Tableau, Power BI, matplotlib)",
+      "Strong problem-solving and critical thinking skills"
+    ],
+    "postedDate": "2024-01-12T09:45:00Z",
+    "applicationDeadline": "2024-02-12T23:59:59Z"
+  },
+  {
+    "id": "5",
+    "title": "DevOps Engineer",
+    "company": "CloudTech Systems",
+    "location": "Austin, TX",
+    "type": "full-time",
+    "salary": {
+      "min": 105000,
+      "max": 135000
+    },
+    "description": "We're looking for a DevOps Engineer to help maintain and improve our cloud infrastructure and deployment pipelines. You'll work with AWS/Azure services, containerization, and automation tools to ensure reliable and scalable systems.\n\nThis role involves implementing CI/CD pipelines, monitoring system performance, managing infrastructure as code, and collaborating with development teams to optimize deployment processes.\n\nThe ideal candidate has experience with cloud platforms, containerization technologies, and infrastructure automation. You'll play a key role in ensuring our systems are secure, scalable, and highly available.",
+    "requirements": [
+      "3+ years of DevOps or infrastructure experience",
+      "Strong experience with AWS or Azure cloud platforms",
+      "Proficiency with containerization (Docker, Kubernetes)",
+      "Experience with CI/CD tools (Jenkins, GitLab CI, GitHub Actions)",
+      "Knowledge of infrastructure as code (Terraform, CloudFormation)",
+      "Scripting skills in Python, Bash, or PowerShell",
+      "Understanding of monitoring and logging tools",
+      "Experience with security best practices and compliance"
+    ],
+    "postedDate": "2024-01-11T16:20:00Z",
+    "applicationDeadline": "2024-02-11T23:59:59Z"
+  }
+]

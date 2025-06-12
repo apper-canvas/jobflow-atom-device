@@ -1,0 +1,55 @@
+[
+  {
+    "id": "user1",
+    "email": "john.doe@example.com",
+    "name": "John Doe",
+    "phone": "(555) 123-4567",
+    "location": "San Francisco, CA",
+    "headline": "Senior Software Engineer",
+    "summary": "Experienced software engineer with 8+ years of experience in full-stack development. Passionate about building scalable web applications and leading technical teams. Expertise in React, Node.js, and cloud technologies.",
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "TypeScript",
+      "Python",
+      "AWS",
+      "Docker",
+      "GraphQL",
+      "MongoDB",
+      "PostgreSQL"
+    ],
+    "experience": [
+      {
+        "id": 1,
+        "title": "Senior Software Engineer",
+        "company": "Tech Innovations Inc.",
+        "location": "San Francisco, CA",
+        "startDate": "2021-03",
+        "endDate": "",
+        "current": true,
+        "description": "Lead development of microservices architecture serving 1M+ users. Mentored junior developers and improved deployment pipeline efficiency by 40%."
+      },
+      {
+        "id": 2,
+        "title": "Full Stack Developer",
+        "company": "StartupXYZ",
+        "location": "San Francisco, CA",
+        "startDate": "2019-01",
+        "endDate": "2021-02",
+        "current": false,
+        "description": "Built responsive web applications using React and Node.js. Implemented RESTful APIs and optimized database queries for better performance."
+      }
+    ],
+    "education": [
+      {
+        "id": 1,
+        "degree": "Bachelor of Science in Computer Science",
+        "school": "University of California, Berkeley",
+        "graduationYear": "2018"
+      }
+    ],
+    "resumeUrl": "john-doe-resume.pdf",
+    "createdAt": "2024-01-01T00:00:00Z"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "app1",
+    "userId": "user1",
+    "jobId": "2",
+    "jobTitle": "Product Manager",
+    "company": "InnovateLabs",
+    "resumeUrl": "john-doe-resume.pdf",
+    "coverLetter": "I am excited to apply for the Product Manager position at InnovateLabs. With my background in software engineering and passion for product development, I believe I can bring a unique technical perspective to your product team. I have experience working closely with product managers in my current role and have developed strong analytical skills that would be valuable in understanding user needs and translating them into technical requirements.",
+    "status": "pending",
+    "appliedDate": "2024-01-14T15:30:00Z"
+  },
+  {
+    "id": "app2",
+    "userId": "user1",
+    "jobId": "5",
+    "jobTitle": "DevOps Engineer",
+    "company": "CloudTech Systems",
+    "resumeUrl": "john-doe-resume.pdf",
+    "coverLetter": "I am writing to express my interest in the DevOps Engineer position at CloudTech Systems. My experience with AWS, Docker, and CI/CD pipelines aligns well with your requirements. In my current role, I have implemented automated deployment processes that reduced deployment time by 50% and improved system reliability. I am particularly excited about the opportunity to work with cloud infrastructure at scale and contribute to your team's success.",
+    "status": "interview",
+    "appliedDate": "2024-01-12T10:15:00Z"
+  },
+  {
+    "id": "app3",
+    "userId": "user1",
+    "jobId": "4",
+    "jobTitle": "Data Scientist",
+    "company": "Analytics Plus",
+    "resumeUrl": "john-doe-resume.pdf",
+    "coverLetter": "I am interested in the Data Scientist position at Analytics Plus. While my primary background is in software engineering, I have been working extensively with data analysis and machine learning in my current projects. I have implemented recommendation systems and built data pipelines that process large datasets. I am eager to transition into a more data-focused role and believe my technical background would be valuable in implementing data science solutions.",
+    "status": "rejected",
+    "appliedDate": "2024-01-10T09:00:00Z"
+  }
+]
