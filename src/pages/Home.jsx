@@ -3,29 +3,31 @@ import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import ApperIcon from '../components/ApperIcon'
-import { jobService, savedJobService, applicationService } from '../services'
+import { jobService, savedJobService, applicationService, userService } from '../services'
 
 const Home = () => {
   const navigate = useNavigate()
-  const [stats, setStats] = useState({
+const [stats, setStats] = useState({
     savedJobs: 0,
     applications: 0,
     pendingApplications: 0
   })
   const [recentJobs, setRecentJobs] = useState([])
   const [recentApplications, setRecentApplications] = useState([])
+  const [recommendations, setRecommendations] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
-  useEffect(() => {
+useEffect(() => {
     const loadDashboardData = async () => {
       setLoading(true)
       setError(null)
       try {
-        const [jobs, saved, applications] = await Promise.all([
+        const [jobs, saved, applications, recommendedJobs] = await Promise.all([
           jobService.getAll(),
           savedJobService.getAll(),
-          applicationService.getAll()
+          applicationService.getAll(),
+          jobService.getRecommendations()
         ])
 
         // Calculate stats
@@ -43,6 +45,9 @@ const Home = () => {
         // Get recent applications (last 3)
         const sortedApps = applications.sort((a, b) => new Date(b.appliedDate) - new Date(a.appliedDate))
         setRecentApplications(sortedApps.slice(0, 3))
+
+        // Set recommendations
+        setRecommendations(recommendedJobs)
 
       } catch (err) {
         setError(err.message || 'Failed to load dashboard data')
@@ -190,6 +195,76 @@ const Home = () => {
           </div>
         </motion.div>
       </div>
+
+{/* Recommended Jobs Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        className="bg-white rounded-lg p-6 shadow-sm mb-6"
+      >
+        <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center">
+            <ApperIcon name="Target" className="w-5 h-5 text-primary mr-2" />
+            <h2 className="text-lg font-semibold text-surface-800">Recommended for You</h2>
+          </div>
+          <button
+            onClick={() => navigate('/jobs')}
+            className="text-primary hover:text-secondary text-sm font-medium transition-colors"
+          >
+            View All Jobs
+          </button>
+        </div>
+
+        {recommendations.length === 0 ? (
+          <div className="text-center py-8">
+            <ApperIcon name="Target" className="w-12 h-12 text-surface-300 mx-auto mb-3" />
+            <p className="text-surface-600 mb-2">No recommendations available</p>
+            <p className="text-surface-500 text-sm mb-4">Complete your profile to get personalized job suggestions</p>
+            <button
+              onClick={() => navigate('/profile')}
+              className="text-primary hover:text-secondary font-medium transition-colors"
+            >
+              Update Profile
+            </button>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {recommendations.map((job, index) => (
+              <motion.div
+                key={job.id}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.1 }}
+                onClick={() => handleJobClick(job.id)}
+                className="p-4 border border-surface-200 rounded-lg hover:border-primary hover:shadow-md transition-all cursor-pointer bg-gradient-to-r from-primary/5 to-secondary/5"
+              >
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className="font-medium text-surface-800 mb-1 flex-1 pr-2">{job.title}</h3>
+                  {job.recommendationScore && (
+                    <div className="flex items-center bg-primary/10 text-primary px-2 py-1 rounded-full text-xs font-medium">
+                      <ApperIcon name="Star" className="w-3 h-3 mr-1" />
+                      {Math.round(job.recommendationScore)}% match
+                    </div>
+                  )}
+                </div>
+                <p className="text-surface-600 text-sm mb-2">{job.company}</p>
+                <div className="flex items-center text-xs text-surface-500 mb-2">
+                  <ApperIcon name="MapPin" className="w-3 h-3 mr-1" />
+                  <span className="mr-4">{job.location}</span>
+                  <ApperIcon name="Clock" className="w-3 h-3 mr-1" />
+                  <span>{job.type}</span>
+                </div>
+                {job.salary && (
+                  <div className="text-primary font-semibold text-sm">
+                    ${job.salary.min?.toLocaleString()} - ${job.salary.max?.toLocaleString()}
+                  </div>
+                )}
+              </motion.div>
+            ))}
+          </div>
+        )}
+      </motion.div>
 
       {/* Recent Activity */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
